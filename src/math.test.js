@@ -13,6 +13,10 @@ test('should create a summary of the numbers added together', ()=>{
 
 test('should yield NaN if at least one invalid number is provided', ()=>{
 
-   const invalidNumber = ['Invalid number', 1]
+   const InvalidNumber = ['Invalid number', 1]
+
+    const Invalid = add(InvalidNumber);
+
+    expect(Invalid).toBeNaN();
 
 })
