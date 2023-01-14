@@ -10,3 +10,9 @@ test('should create a summary of the numbers added together', ()=>{
    
    expect(result).toBe(expectedResult);
 })
+
+test('should yield NaN if at least one invalid number is provided', ()=>{
+
+   const invalidNumber = ['Invalid number', 1]
+
+})
