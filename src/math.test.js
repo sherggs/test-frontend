@@ -20,3 +20,14 @@ test('should yield NaN if at least one invalid number is provided', ()=>{
     expect(Invalid).toBeNaN();
 
 })
+
+test('should yield the correct sum of numbers', ()=>{
+
+   const InvalidNumber = ['1', '2', '3', '4']
+   
+   const result = add(InvalidNumber);
+
+   const expectedResult = InvalidNumber.reduce((prevValue, currentValue)=> +prevValue + +currentValue, 0);
+   
+   expect(result).toBe(expectedResult);
+})
