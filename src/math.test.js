@@ -27,7 +27,7 @@ test('should yield the correct sum of numbers', ()=>{
    
    const result = add(InvalidNumber);
 
-   const expectedResult = InvalidNumber.reduce((prevValue, currentValue)=> +prevValue + +currentValue, 0);
+   const expectedResult = InvalidNumber.reduce((prevValue, currentValue)=> +prevValue + currentValue, 0);
    
    expect(result).toBe(expectedResult);
 })
